@@ -69,18 +69,30 @@
     </script>
 
 
-
-    @vite('resources/css/app.css')
+    
+    {{-- Assert builds --}}
+    @php
+        $environment = 'dev';
+    @endphp
+    @if($environment == 'dev')
+        {{-- Development scripts --}}
+        {{-- @vite(['resources/css/app.css', 'resources/scss/app.scss', 'resources/js/app.js']) --}}
+        @vite('resources/css/app.css')
+    @else
+        {{-- Production scripts --}}
+        <link rel="stylesheet" href="{{ asset('build/assets/app-2e3c9967.css') }}">
+        <script src="{{ asset('build/assets/app-a6d2e222.js') }}" defer></script>
+    @endif
 
 </head>
 <body>
     
 
 
-    <div id="particles-js" style="background-image: url({{asset('images/backgrounds/developer-1.jpg ')}});" class="w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col justify-center items-center">
-        <nav id="topNav" class="fixed top-0 w-full top-nav z-50 flex justify-between items-center text-lg font-thin text-white px-20 py-10 bg-transparent bg-opacity-90 drop-shadow transition-all ease duration-1000">
+    <div id="particles-js" style="background-image: url({{asset('images/backgrounds/developer-1.jpg')}});" class="w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col justify-center items-center">
+        <nav id="topNav" class="shift fixed top-0 w-full top-nav z-50 flex justify-between items-center text-lg font-thin text-white px-20 py-10 bg-transparent bg-opacity-90 drop-shadow transition-all ease duration-1000">
             <a href="/" id="siteLogo" class="text-5xl font-bold text-white transition-all ease duration-1000">FJ<span class="text-yellow-300">.</span></a>
-            <ul class="flex gap-10">
+            <ul class="flex">
                 <li>
                     <a href="#about">About</a>
                 </li>
@@ -102,7 +114,7 @@
         <h1 class="text-center m-auto text-[7rem] h-1/2 absolute top-1/2 -translate-y-[25%] font-bold text-white">Web design in Tavira<span class="text-yellow-300">.</span></h1>
         
         <div class="absolute bottom-0 mx-auto py-6 w-full text-center">
-            <a href="#about">
+            <a href="#about" aria-label="Scroll down to learn more">
                 <i class="fa-solid fa-chevron-down font-bold text-5xl text-white animate-bounce transition-all duration-250 hover:scale-150"></i>
             </a>
         </div>
@@ -118,7 +130,7 @@
             </h1>
             <p class="text-xl text-gray-500 w-4/5 leading-relaxed font-thin mb-10">
                 I'm a web designer & developer local to Tavira, Algarve. I specialise in creating attractive websites for small business such as accountants, dental practices, restaurants, private healthcare, and estate agents.<br>With more than 15 years experience in the industry, I produce quality work at competitive prices.<br>
-                <a href="#contact" class="no-underline underline-offset-4 text-yellow-500 hover:underline">Contact me</a> today to discuss your next project and get a quote.
+                <a href="#contact" class="bg-yellow-400 text-black px-2 py-0.5 transition-all ease duration-500 hover:bg-lime-500 hover:text-white">Contact me</a> today to discuss your next project and get a quote.
             </p>
             <a href="/" class="btn btn-positive mr-6">Download CV</a>
 
@@ -326,22 +338,22 @@
         <div>&copy; {{date('Y', time())}} <span class="mx-4 text-gray-300">|</span> ALL RIGHTS RESERVED.</div>
         <ul class="flex gap-3 mx-auto mt-4">
             <li>
-                <a href="https://facebook.com">
+                <a href="https://facebook.com" aria-label="Connent with Frank Jones on Facebook">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
             </li>
             <li>
-                <a href="https://twitter.com">
+                <a href="https://twitter.com" aria-label="Connent with Frank Jones on Twitter">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
             </li>
             <li>
-                <a href="https://linkedin.com">
+                <a href="https://linkedin.com" aria-label="Connent with Frank Jones on Linkedin">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
             <li>
-                <a href="https://instagram.com">
+                <a href="https://instagram.com" aria-label="Connent with Frank Jones on Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </li>
