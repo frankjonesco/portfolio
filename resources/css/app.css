@@ -121,10 +121,9 @@
         text-decoration: none;
         margin: 0 10px;
       }
-      nav ul li a,
       nav ul li a:after,
       nav ul li a:before {
-        transition: all .5s;
+        transition: all 0.5s;
       }
       nav ul li a:hover {
       }

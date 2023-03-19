@@ -1,0 +1,10 @@
+<x-template>
+    <x-header-home/>
+    <x-about/>
+    <x-what-i-do/>
+    <x-recent-works/>
+    <x-latest-blogs/>
+    <x-latest-blogs/>
+    <x-contact-form/>
+    <x-footer/>
+</x-template>
