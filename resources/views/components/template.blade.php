@@ -32,20 +32,7 @@
 
 
 
-<script>
-    function scrollTo(element) {
-      window.scroll({
-        behavior: 'smooth',
-        left: 0,
-        top: element.offsetTop
-      });
-    }
 
-    document.getElementById("scrollDown").addEventListener('click', () => {
-      scrollTo(document.getElementById("blog"));
-    });
-
-</script>
 
 
 
@@ -231,6 +218,6 @@
           "retina_detect": true });
         //# sourceURL=pen.js
             </script>
-    
+  <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js" defer></script>
 </body>
 </html>
