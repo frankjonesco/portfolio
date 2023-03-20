@@ -10,4 +10,16 @@ class SiteController extends Controller
     public function home(){
         return view('home');
     }
+
+
+    // Show 'How it works'
+    public function howItWorks(){
+        return view('how-it-works');
+    }
+
+
+    // Show 'FAQs'
+    public function faq(){
+        return view('faq');
+    }
 }

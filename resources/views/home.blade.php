@@ -6,5 +6,4 @@
     <x-recent-works />
     <x-latest-blogs />
     <x-contact-form />
-    <x-footer />
 </x-template>
