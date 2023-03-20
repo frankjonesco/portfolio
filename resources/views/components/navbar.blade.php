@@ -5,7 +5,13 @@
             <a href="#about">About</a>
         </li>
         <li>
+            <a href="#why-hire-me">Why hire me?</a>
+        </li>
+        <li>
             <a href="#what-i-do">What I do</a>
+        </li>
+        <li>
+            <a href="/how-it-works">How it works</a>
         </li>
         <li>
             <a href="#recent-works">Works</a>
