@@ -19,7 +19,7 @@
                         <h3 class="text-lg">Why do I use design templates instead of designing from scratch?</h3>
                         <p><b>You save money</b> and it speeds up the project completion time. <b>It is much more expensive to design from scratch</b> as it adds a lot of time to the project.</p>
                     </div>
-                    <img src="{{asset('images/templates/templates-grid.png')}}" alt="">
+                    <img src="{{asset('images/templates/templates-grid.webp')}}" alt="" width="468" height="325">
                 </div>
             </div>
 
@@ -30,7 +30,7 @@
                     <span class="relative top-[2px] -left-[1px]">2</span>
                 </div>
                 <div class="p-20 grid grid-cols-2 gap-20">
-                    <img src="{{asset('images/dropbox.jpg')}}" alt="">
+                    <img src="{{asset('images/dropbox.webp')}}" alt="" width="468" height="277">
                     <div>
                         <h3 class="text-3xl mb-3">Provide Me With Website Content</h3>
                         <p>I provide a Dropbox link where you may upload all the relevant content to be used on your site.</p>
@@ -64,7 +64,7 @@
                         <h3 class="text-3xl mb-3">Finish Build & Review</h3>
                         <p>Once I have completed building your site, I will send it over to you for review.</p>
                     </div>
-                    <img src="{{asset('images/leonardo.gif')}}" alt="" class="mx-auto">
+                    <img src="{{asset('images/leonardo.gif')}}" alt="" width="220" height="220" class="mx-auto">
                     
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     <span class="relative top-[2px] -left-[1px]">4</span>
                 </div>
                 <div class="p-20 grid grid-cols-2 gap-20">
-                    <img src="{{asset('images/rocket-launch.gif')}}" alt="">
+                    <img src="{{asset('images/rocket-launch.gif')}}" alt="" width="468" height="281">
                     <div>
                         <h3 class="text-3xl mb-3">Enjoy Your Awesome Website!</h3>
                         <p class="mb-3">Once you review and we make any last minute changes, I'll ask you to confirm your ready for launch 🎉. </p>
@@ -88,7 +88,7 @@
 
                 <div class="rounded-full w-16 aspect-square text-white text-3xl font-bold flex justify-center items-center absolute -left-9 -bottom-8">
                     <span>
-                        <img src="{{asset('images/smile.webp')}}" alt="">
+                        <img src="{{asset('images/smile.webp')}}" alt="" class="w-16 aspect-square">
                     </span>
                 </div>
             </div>

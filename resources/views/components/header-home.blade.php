@@ -1,17 +1,3 @@
-<script>
-    function scrollTo(element) {
-      window.scroll({
-        behavior: 'smooth',
-        left: 0,
-        top: element.offsetTop
-      });
-    }
-
-    document.getElementById("scrollDown").addEventListener('click', () => {
-      scrollTo(document.getElementById("blog"));
-    });
-</script>
-
 <div id="particles-js" style="background-image: url({{asset('images/backgrounds/developer-1.webp')}});" class="w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col justify-center items-center">
         
     <x-navbar/>
