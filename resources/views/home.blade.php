@@ -1,9 +1,9 @@
 <x-template>
     <x-header-home />
-    <x-about />
-    <x-what-i-do/>
+    <x-what-i-do />
+    <x-banner />
     <x-why-hire-me />
-    <x-recent-works />
-    <x-latest-blogs />
+    <x-how-it-works />
     <x-contact-form />
+    <x-faq />
 </x-template>

@@ -1,9 +1,7 @@
-<x-template>
-    <x-navbar class="bg-gradient-to-tr from-slate-700 to-black" />
 
 
 
-    <section id="how-it-works">
+    <section id="faq">
         <div class="container !w-3/4 py-40 flex flex-col items-center">
             <h2>FAQs</h2>
 
@@ -137,4 +135,3 @@
     </section>
     
 
-</x-template>

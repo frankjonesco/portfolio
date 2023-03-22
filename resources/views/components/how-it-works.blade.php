@@ -1,7 +1,3 @@
-<x-template>
-    <x-navbar class="bg-gradient-to-tr from-slate-700 to-black" />
-
-
 
     <section id="how-it-works">
         <div class="container !w-3/4 py-40 flex flex-col items-center">
@@ -19,7 +15,7 @@
                     
                     <div>
                         <h3 class="text-3xl mb-3">Pick a Design</h3>
-                        <p>Go to <a href="https://webflow.com/templates" target="_blank" class="bg-yellow-300 px-1.5 py-1 hover:bg-black hover:text-white transition-all ease duration-300">https://webflow.com/templates</a> and pick a design you like.</p>
+                        <p>Go to <a href="https://webflow.com/templates" target="_blank" class="font-bold bg-yellow-300 px-1.5 py-1 hover:bg-black hover:text-white transition-all ease duration-300">https://webflow.com/templates</a> and pick a design you like.</p>
                         <h3 class="text-lg">Why do I use design templates instead of designing from scratch?</h3>
                         <p><b>You save money</b> and it speeds up the project completion time. <b>It is much more expensive to design from scratch</b> as it adds a lot of time to the project.</p>
                     </div>
@@ -37,7 +33,7 @@
                     <img src="{{asset('images/dropbox.jpg')}}" alt="">
                     <div>
                         <h3 class="text-3xl mb-3">Provide Me With Website Content</h3>
-                        <p>I will provide a Dropbox link where you may upload all the relevant content to be used on your site.</p>
+                        <p>I provide a Dropbox link where you may upload all the relevant content to be used on your site.</p>
                         <ul class="list-disc ml-5 mt-5">
                             <li>Photos</li>
                             <li>Videos</li>
@@ -101,4 +97,3 @@
     </section>
 
 
-</x-template>

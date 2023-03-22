@@ -22,7 +22,7 @@
     /* BODY */
 
     body{
-        font-family: 'Hind', sans-serif;
+        font-family: 'Poppins', sans-serif;
         @apply text-gray-900;
         @apply bg-white;
     }
@@ -276,6 +276,19 @@
       }
     }
 
+
+
+    .box-card{
+      @apply bg-white;
+      @apply rounded-xl;
+      @apply p-6;
+      @apply transition-all;
+      @apply ease-out;
+      @apply duration-300;
+      @apply drop-shadow;
+      @apply hover:drop-shadow-2xl;
+      @apply hover:-translate-y-3;
+    }
 
 }
 
