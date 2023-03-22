@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\ImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +29,26 @@ Route::controller(SiteController::class)->group(function(){
     Route::post('/contact/send', 'sendContactFormMessage');
     Route::get('/faq', 'faq');
 });
+
+
+/*
+|--------------------------------------------------------------------------
+| Routes for SiteController
+|--------------------------------------------------------------------------
+*/
+
+Route:: controller(ImageController::class)->group(function(){
+    Route::get('images/upload', 'index');
+    Route::post('images/store', 'store')->name('image.store');
+    Route::get('images/compress', 'compressToWebp');
+    Route::get('images/compress/directory', 'compressDirectoryToWebp');
+});
+
+
+
+
+Route::get('send-mail', [MailController::class, 'index']);
+
+
+
+

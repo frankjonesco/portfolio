@@ -1,8 +1,8 @@
 <section id="contact">
     <div class="container py-28">
-        <h2>Contact me</h2>
+        <h2 class="text-center">Contact me</h2>
 
-        <form id="contactForm" action="/contact/send#contact" method="POST">
+        <form id="contactForm" action="/contact/send#contact" method="POST" class="text-center">
 
             @csrf
 
@@ -43,7 +43,7 @@
                 </div>
             </div>
                 
-            <button type="submit" class="btn mt-10 border">Send message</button>
+            <button type="submit" class="btn mt-10 border mx-auto">Send message</button>
         </form>
     </div>
 </section>

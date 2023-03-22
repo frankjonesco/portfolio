@@ -10,12 +10,12 @@
         <li>
             <a href="/#how-it-works">How it works</a>
         </li>
-        <li>
+        {{-- <li>
             <a href="/#see-my-portfolio">See my portfolio</a>
         </li>
         <li>
             <a href="/#reviews">Reviews</a>
-        </li>
+        </li> --}}
         <li>
             <a href="/#contact">Contact me</a>
         </li>

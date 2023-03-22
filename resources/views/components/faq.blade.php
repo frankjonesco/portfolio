@@ -5,7 +5,7 @@
         <div class="container !w-3/4 py-40 flex flex-col items-center">
             <h2>FAQs</h2>
 
-            <p class="w-1/2 text-center">Here are some of the most frequently asked questions we receive.</p>
+            <p class="w-1/2 text-center mb-16">Here are some of the most frequently asked questions we receive.</p>
 
 
 

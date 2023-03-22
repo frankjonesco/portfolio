@@ -12,7 +12,7 @@
     });
 </script>
 
-<div id="particles-js" style="background-image: url({{asset('images/backgrounds/developer-1.jpg')}});" class="w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col justify-center items-center">
+<div id="particles-js" style="background-image: url({{asset('images/backgrounds/developer-1.webp')}});" class="w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col justify-center items-center">
         
     <x-navbar/>
 

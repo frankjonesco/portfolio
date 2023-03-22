@@ -60,7 +60,7 @@
     
     {{-- Assert builds --}}
     @php
-        $environment = 'dev';
+        $environment = 'prd';
     @endphp
     @if($environment == 'dev')
         {{-- Development scripts --}}
@@ -68,7 +68,7 @@
         @vite('resources/css/app.css')
     @else
         {{-- Production scripts --}}
-        <link rel="stylesheet" href="{{ asset('build/assets/app-96094593.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/assets/app-99f0e532.css') }}">
         <script src="{{ asset('build/assets/app-a6d2e222.js') }}" defer></script>
     @endif
 
