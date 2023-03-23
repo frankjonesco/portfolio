@@ -69,15 +69,15 @@ class ImageController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function compressToWebp(){
-        $fileExtension = '.jpg';
-        $imageName = 'work-6';
-        $destinationPath = public_path('images/works/');
+        $fileExtension = '.webp';
+        $imageName = 'developer-1';
+        $destinationPath = public_path('images/backgrounds/');
         // $imageWidth = 200;
         // $imageHeight = 150;
         
         $image = Image::make($destinationPath.$imageName.$fileExtension);
 
-        $image->save($destinationPath.$imageName.'.webp', 75, 'webp');
+        $image->save($destinationPath.'test.webp', 60, 'webp');
 
         return redirect('images/upload')->with('message', 'Image Has Been Compressed');
 

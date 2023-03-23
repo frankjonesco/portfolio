@@ -64,8 +64,12 @@
                         <h3 class="text-3xl mb-3">Finish Build & Review</h3>
                         <p>Once I have completed building your site, I will send it over to you for review.</p>
                     </div>
-                    <img src="{{asset('images/leonardo.gif')}}" alt="" width="220" height="220" class="mx-auto">
-                    
+                    {{-- <img src="{{asset('images/leonardo.gif')}}" width="220" height="220" class="mx-auto" alt="Leonardo"> --}}
+                    <video preload="auto" width="220" height="220" autoplay muted loop playsinline class="mx-auto">
+                        <source src="{{asset('images/leonardo.webm')}}" type="video/webm" />
+                        <source src="{{asset('images/leonardo.mp4')}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
 
@@ -76,7 +80,12 @@
                     <span class="relative top-[2px] -left-[1px]">4</span>
                 </div>
                 <div class="p-20 grid grid-cols-2 gap-20">
-                    <img src="{{asset('images/rocket-launch.gif')}}" alt="" width="468" height="281">
+                    {{-- <img src="{{asset('images/rocket-launch.gif')}}" width="468" height="281" class="mx-auto" alt="Rocket launch"> --}}
+                    <video preload="auto" width="468" height="281" autoplay muted loop playsinline class="mx-auto">
+                        <source src="{{asset('images/rocket-launch.webm')}}" type="video/webm">
+                        <source src="{{asset('images/rocket-launch.mp4')}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div>
                         <h3 class="text-3xl mb-3">Enjoy Your Awesome Website!</h3>
                         <p class="mb-3">Once you review and we make any last minute changes, I'll ask you to confirm your ready for launch 🎉. </p>

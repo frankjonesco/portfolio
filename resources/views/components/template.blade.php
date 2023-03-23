@@ -12,17 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400&family=Hind:wght@300;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-
-
-
-
-
-
-
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400&family=Hind:wght@300;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="preload"  as="style" onload="this.rel='stylesheet'">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJ2FXLCM4S"></script>
@@ -34,8 +24,6 @@
       gtag('config', 'G-VJ2FXLCM4S');
     </script>
 
-
-    
     {{-- Assert builds --}}
     @php
         $environment = 'prod';
@@ -43,11 +31,11 @@
     @if($environment == 'dev')
         {{-- Development scripts --}}
         {{-- @vite(['resources/css/app.css', 'resources/scss/app.scss', 'resources/js/app.js']) --}}
-        @vite('resources/css/app.css')
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         {{-- Production scripts --}}
-        <link rel="stylesheet" href="{{ asset('build/assets/app-99f0e532.css') }}">
-        <script src="{{ asset('build/assets/app-a6d2e222.js') }}" defer></script>
+        <link href="{{ asset('build/assets/app-51f2f2c4.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
+        <script src="{{ asset('build/assets/app-a0b492b1.js') }}" defer></script>
     @endif
 
 </head>
@@ -57,47 +45,9 @@
 
     <x-footer />
 
-    <script>
-        var body = document.getElementsByTagName('body')[0];
-        // body.style.backgroundColor = 'green';
 
-        var navbar = document.querySelector("#topNav");
-
-        var siteLogo = document.querySelector("#siteLogo");
-
-        // trigger this function every time the user scrolls
-        window.onscroll = function (event) {
-            var scroll = window.pageYOffset;
-
-            // console.log(scroll);
-            if (scroll > 40) {
-                navbar.classList.remove('bg-transparent', 'text-white', 'py-10');
-                navbar.classList.add('bg-white', 'text-black', 'py-5');
-
-                siteLogo.classList.remove('text-5xl', 'text-white');
-                siteLogo.classList.add('text-4xl', 'text-black');
-
-                // green
-                // body.style.backgroundColor = 'green';
-            
-            } else {
-
-                navbar.classList.remove('bg-white', 'text-black', 'py-5');
-                navbar.classList.add('bg-transparent', 'text-white', 'py-10');
-
-                siteLogo.classList.remove('text-4xl', 'text-black');
-                siteLogo.classList.add('text-5xl', 'text-white');
-                // purple
-                // body.style.backgroundColor = 'purple';
-            }
-        }
-    </script>
-
-
-
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script id="rendered-js">
+    <script id="rendered-js" defer>
         /* ---- particles.js config ---- */
     
         particlesJS("particles-js", {
@@ -197,6 +147,5 @@
           "retina_detect": true });
         //# sourceURL=pen.js
             </script>
-  <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js" defer></script>
 </body>
 </html>
