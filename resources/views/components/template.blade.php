@@ -10,6 +10,13 @@
     <title>Web design in Tavira - Professional web design for local business</title>
     <meta name="description" content="Professional web design for local business in the Algarve. We specialise in creating attractive websites for small business such at affordable prices.">
 
+    {{-- Open graph information --}}
+    <meta property="og:url" content="{{url()->current()}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Web design in Tavira - Professional web design for local business" />
+    <meta property="og:description" content="Professional web design for local business in the Algarve. We specialise in creating attractive websites for small business such at affordable prices." />
+    <meta property="og:image" content="{{asset('images/fj-banner.webp')}}" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400&family=Hind:wght@300;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="preload"  as="style" onload="this.rel='stylesheet'">
@@ -26,7 +33,7 @@
 
     {{-- Assert builds --}}
     @php
-        $environment = 'prod';
+        $environment = 'build';
     @endphp
     @if($environment == 'dev')
         {{-- Development scripts --}}
@@ -34,8 +41,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         {{-- Production scripts --}}
-        <link href="{{ asset('build/assets/app-51f2f2c4.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
-        <script src="{{ asset('build/assets/app-a0b492b1.js') }}" defer></script>
+        <link href="{{ asset('build/assets/app-a7edf100.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
+        <script src="{{ asset('build/assets/app-6f4ac19c.js') }}" defer></script>
     @endif
 
 </head>

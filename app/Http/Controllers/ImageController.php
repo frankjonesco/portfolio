@@ -61,7 +61,6 @@ class ImageController extends Controller
         }
 
         return back();
-
     }
 
     /** Display a listing of the resource.
@@ -69,18 +68,17 @@ class ImageController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function compressToWebp(){
-        $fileExtension = '.webp';
-        $imageName = 'developer-1';
-        $destinationPath = public_path('images/backgrounds/');
+        $fileExtension = '.png';
+        $imageName = 'fj-banner';
+        $destinationPath = public_path('images/');
         // $imageWidth = 200;
         // $imageHeight = 150;
         
         $image = Image::make($destinationPath.$imageName.$fileExtension);
 
-        $image->save($destinationPath.'test.webp', 60, 'webp');
+        $image->save($destinationPath.$imageName.'.webp', 20, 'webp');
 
         return redirect('images/upload')->with('message', 'Image Has Been Compressed');
-
     }
 
     /** Display a listing of the resource.
@@ -109,8 +107,29 @@ class ImageController extends Controller
         }
 
         return redirect('images/upload')->with('message', 'Image Has Been Compressed');
-        
+    }
 
+    /** Display a listing of the resource.
+     * 
+     * @return \Illuminate\Http\Response
+     */
+    public function resizeImage(){
+
+        $fileExtension = '.webp';
+        $imageName = 'fj-banner';
+        $destinationPath = public_path('images/');
+        $imageWidth = 1080;
+        $imageHeight = null;
+        
+        $image = Image::make($destinationPath.$imageName.$fileExtension);
+
+        $image->resize($imageWidth, $imageHeight, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+
+        $image->save();
+
+        return redirect('images/upload')->with('message', 'Image Has Been Resized');
     }
 
 }

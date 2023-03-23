@@ -33,16 +33,17 @@ Route::controller(SiteController::class)->group(function(){
 
 /*
 |--------------------------------------------------------------------------
-| Routes for SiteController
+| Routes for ImageController
 |--------------------------------------------------------------------------
 */
 
-Route:: controller(ImageController::class)->group(function(){
-    Route::get('images/upload', 'index');
-    Route::post('images/store', 'store')->name('image.store');
-    Route::get('images/compress', 'compressToWebp');
-    Route::get('images/compress/directory', 'compressDirectoryToWebp');
-});
+// Route:: controller(ImageController::class)->group(function(){
+//     Route::get('images/upload', 'index');
+//     Route::post('images/store', 'store')->name('image.store');
+//     Route::get('images/compress', 'compressToWebp');
+//     Route::get('images/compress/directory', 'compressDirectoryToWebp');
+//     Route::get('images/resize', 'resizeImage');
+// });
 
 
 
