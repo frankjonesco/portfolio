@@ -2,14 +2,14 @@
 
 
     <section id="faq">
-        <div class="container !w-3/4 py-40 flex flex-col items-center">
+        <div class="container w-full lg:!w-3/4 py-40 flex flex-col items-center">
             <h2>FAQs</h2>
 
-            <p class="w-1/2 text-center mb-16">Here are some of the most frequently asked questions we receive.</p>
+            <p class="w-full lg:w-1/2 text-center mb-16">Here are some of the most frequently asked questions we receive.</p>
 
 
 
-            <div class="grid grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
                     <h3>How mush do you charge for a website?</h3>

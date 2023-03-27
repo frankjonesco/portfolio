@@ -4,6 +4,8 @@ import './bootstrap';
 const body = document.getElementsByTagName('body')[0];
 const navbar = document.querySelector("#topNav");
 const siteLogo = document.querySelector("#siteLogo");
+const hamburgerMenu = document.querySelector("#hamburger-menu");
+const hamburgerSegments = document.querySelectorAll(".hamburger-segments");
 
 // Check scroll for nav function
 function checkScrollForNav(){
@@ -14,7 +16,14 @@ function checkScrollForNav(){
         navbar.classList.add('bg-white', 'text-black', 'py-5');
         // Adjust site logo
         siteLogo.classList.remove('text-5xl', 'text-white');
-        siteLogo.classList.add('text-4xl', 'text-black');            
+        siteLogo.classList.add('text-4xl', 'text-black');    
+        // Adjust hamburgur segments
+        hamburgerMenu.classList.remove('space-y-1.5');
+        hamburgerMenu.classList.add('space-y-1');
+        [].forEach.call(hamburgerSegments, el => {
+            el.classList.remove('bg-white', 'w-10', 'h-1.5');
+            el.classList.add('bg-black', 'w-8', 'h-1');
+        });
     } else {
         // Adjust navbar
         navbar.classList.remove('bg-white', 'text-black', 'py-5');
@@ -22,6 +31,13 @@ function checkScrollForNav(){
         // Adjust site logo
         siteLogo.classList.remove('text-4xl', 'text-black');
         siteLogo.classList.add('text-5xl', 'text-white');
+        // Adjust hamburgur segments
+        hamburgerMenu.classList.remove('space-y-1');
+        hamburgerMenu.classList.add('space-y-1.5');
+        [].forEach.call(hamburgerSegments, el => {
+            el.classList.remove('bg-black', 'w-8', 'h-1');
+            el.classList.add('bg-white', 'w-10', 'h-1.5');
+        });
     }
 }
 

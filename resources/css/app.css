@@ -19,6 +19,10 @@
       scroll-behavior: smooth;
     }
 
+    html,body{
+      overflow-x: hidden;
+    }
+
     /* BODY */
 
     body{
@@ -31,11 +35,14 @@
 
 
     .container{
-        @apply !w-2/3;
-        @apply mx-auto;
-        @apply px-10;
-        @apply py-5;
+      @apply !w-full;
+      @apply lg:!w-2/3;
+      @apply mx-auto;
+      @apply px-10;
+      @apply py-5;
     }
+
+  
 
 
 

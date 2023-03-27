@@ -9,6 +9,8 @@
 
     <title>Web design in Tavira - Professional web design for local business</title>
     <meta name="description" content="Professional web design for local business in the Algarve. We specialise in creating attractive websites for small business such at affordable prices.">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
 
     {{-- Open graph information --}}
     <meta property="og:url" content="{{url()->current()}}" />
@@ -33,7 +35,7 @@
 
     {{-- Assert builds --}}
     @php
-        $environment = 'build';
+        $environment = 'dev';
     @endphp
     @if($environment == 'dev')
         {{-- Development scripts --}}
