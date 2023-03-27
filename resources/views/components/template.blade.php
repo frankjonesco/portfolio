@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="icon" type="image/x-icon" href="{{asset('favicon.png')}}">
+    <link rel="icon" href="{{asset('favicon.png')}}">
 
     <title>Web design in Tavira - Professional web design for local business</title>
     <meta name="description" content="Professional web design for local business in the Algarve. We specialise in creating attractive websites for small business such at affordable prices.">
@@ -35,7 +35,7 @@
 
     {{-- Assert builds --}}
     @php
-        $environment = 'dev';
+        $environment = 'prod';
     @endphp
     @if($environment == 'dev')
         {{-- Development scripts --}}
@@ -43,8 +43,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         {{-- Production scripts --}}
-        <link href="{{ asset('build/assets/app-a7edf100.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
-        <script src="{{ asset('build/assets/app-6f4ac19c.js') }}" defer></script>
+        <link href="{{ asset('build/assets/app-e3b8ab15.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
+        <script src="{{ asset('build/assets/app-8d87ecc8.js') }}" defer></script>
     @endif
 
 </head>
