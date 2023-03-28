@@ -3,14 +3,13 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Address;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Queue\SerializesModels;
 
-class OrderShipped extends Mailable
+class ContactFormMailer extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -22,16 +21,13 @@ class OrderShipped extends Mailable
         //
     }
 
-    
-
     /**
      * Get the message envelope.
      */
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('noreply@frankjones.co', 'Frank Jones'),
-            subject: 'Order Shipped',
+            subject: 'Contact Form Mailer',
         );
     }
 
@@ -41,11 +37,7 @@ class OrderShipped extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.contact-form-message',
-            with: [
-                'orderName' => 'Bosh'
-                'orderPrice' => '19.99'
-            ]
+            view: 'view.name',
         );
     }
 
@@ -57,5 +49,11 @@ class OrderShipped extends Mailable
     public function attachments(): array
     {
         return [];
+    }
+
+
+    public function build()
+    {
+        return $this->view('emails.CloudHosting.Product');
     }
 }

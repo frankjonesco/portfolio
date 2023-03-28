@@ -26,8 +26,14 @@ use App\Http\Controllers\ImageController;
 Route::controller(SiteController::class)->group(function(){
     Route::get('/', 'home')->name('home');
     Route::get('/how-it-works', 'howItWorks');
-    Route::post('/contact/send', 'sendContactFormMessage');
+    Route::post('/contact/send', 'mail');
     Route::get('/build', 'build');
+});
+
+Route::get('contact-form-mail', function(){
+    return view('contact-form-mail', [
+        'hide_footer' => true
+    ]);
 });
 
 
