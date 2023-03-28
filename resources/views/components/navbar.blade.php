@@ -1,9 +1,9 @@
-<nav id="topNav" {{$attributes->merge(['class' => 'shift fixed top-0 w-full top-nav z-40 text-lg font-light text-white bg-transparent !bg-opacity-50 drop-shadow transition-all ease-in duration-1000']);}} style="font-family: 'Hind', sans-serif !important;">
+<nav id="topNav" {{$attributes->merge(['class' => 'shift fixed top-0 w-full top-nav z-40 text-lg font-light text-white bg-transparent bg-opacity-80 drop-shadow transition-all ease-in duration-1000']);}} style="font-family: 'Hind', sans-serif !important;">
     <div class="flex justify-between items-center px-7 lg:px-20">
         <a href="/" id="siteLogo" class="active text-5xl font-bold drop-shadow transition-all ease-in duration-1000 text-white">FJ<span class="text-yellow-300">.</span></a>
 
         {{-- Full screen menu --}}
-        <ul id="navLinksFull" class="hidden lg:flex flex-row justify-end items-center bg-opacity-80 w-screen transition-all ease-in duration-1000 text-xl">
+        <ul id="navLinksFull" class="hidden lg:flex flex-row justify-end items-center w-screen transition-all ease-in duration-300 text-xl">
             <li class="text-center">
                 <a href="#" onclick="return scrollToAnchor('what-i-do')">What I do</a>
             </li>
