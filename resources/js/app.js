@@ -2,10 +2,11 @@ import './bootstrap';
 
 // Constants
 const body = document.getElementsByTagName('body')[0];
-const navbar = document.querySelector("#topNav");
 const siteLogo = document.querySelector("#siteLogo");
-const hamburgerMenu = document.querySelector("#hamburger-menu");
-const hamburgerSegments = document.querySelectorAll(".hamburger-segments");
+const navbar = document.querySelector("#topNav");
+const navLinksFull = document.querySelector("#navLinksFull");
+const hamburgerMenu = document.querySelector("#hamburgerMenu");
+const hamburgerSegments = document.querySelectorAll("#hamburgerMenu>span");
 
 // Check scroll for nav function
 function checkScrollForNav(){
@@ -14,29 +15,36 @@ function checkScrollForNav(){
         // Adjust navbar
         navbar.classList.remove('bg-transparent', 'text-white', 'py-10');
         navbar.classList.add('bg-white', 'text-black', 'py-5');
+         // Adjust navLinksFull
+        navLinksFull.classList.remove('text-xl');
+        navLinksFull.classList.add('text-lg');
         // Adjust site logo
         siteLogo.classList.remove('text-5xl', 'text-white');
         siteLogo.classList.add('text-4xl', 'text-black');    
         // Adjust hamburgur segments
-        hamburgerMenu.classList.remove('space-y-1.5');
+        hamburgerMenu.classList.remove('space-y-2');
         hamburgerMenu.classList.add('space-y-1');
         [].forEach.call(hamburgerSegments, el => {
-            el.classList.remove('bg-white', 'w-10', 'h-1.5');
-            el.classList.add('bg-black', 'w-8', 'h-1');
+            el.classList.remove('bg-white', 'w-12', 'h-1.5');
+            el.classList.add('bg-black', 'w-7', 'h-1');
+            
         });
     } else {
         // Adjust navbar
         navbar.classList.remove('bg-white', 'text-black', 'py-5');
         navbar.classList.add('bg-transparent', 'text-white', 'py-10');
+        // Adjust navLinksFull
+        navLinksFull.classList.remove('text-lg');
+        navLinksFull.classList.add('text-xl');
         // Adjust site logo
         siteLogo.classList.remove('text-4xl', 'text-black');
         siteLogo.classList.add('text-5xl', 'text-white');
         // Adjust hamburgur segments
         hamburgerMenu.classList.remove('space-y-1');
-        hamburgerMenu.classList.add('space-y-1.5');
+        hamburgerMenu.classList.add('space-y-2');
         [].forEach.call(hamburgerSegments, el => {
-            el.classList.remove('bg-black', 'w-8', 'h-1');
-            el.classList.add('bg-white', 'w-10', 'h-1.5');
+            el.classList.remove('bg-black', 'w-7', 'h-1');
+            el.classList.add('bg-white', 'w-12', 'h-1.5');
         });
     }
 }
@@ -52,6 +60,30 @@ window.onscroll = function (event) {
 }
 
 
+
+
+
+
+
+function toggleMiniNav(){
+    hamburgerMenu.classList.toggle('open');
+    navLinks.classList.toggle('-translate-x-full');
+    navLinks.classList.toggle('opacity-0');
+}
+
+hamburgerMenu.onclick = function() {
+  toggleMiniNav();
+
+}
+
+
+var miniNavLinks = document.querySelectorAll('ul#navLinks>li>a');
+
+[].forEach.call(miniNavLinks, el => {
+  el.onclick = function () {
+    toggleMiniNav();
+  }
+});
 
 
 

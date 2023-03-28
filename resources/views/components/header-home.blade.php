@@ -1,7 +1,7 @@
 
 <div id="particles-js" style="background-image: url({{asset('images/backgrounds/developer-1.webp')}});" class="w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col justify-center items-center">
         
-    <x-navbar/>
+    <x-navbar />
 
     <h1 class="text-center m-auto text-[5rem] lg:text-[7rem] h-1/2 absolute lg:top-1/2 lg:-translate-y-[25%] font-bold text-white">Web design in Tavira<span class="text-yellow-300">.</span></h1>
         

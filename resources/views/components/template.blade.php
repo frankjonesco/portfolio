@@ -35,7 +35,7 @@
 
     {{-- Assert builds --}}
     @php
-        $environment = 'prod';
+        $environment = 'dev';
     @endphp
     @if($environment == 'dev')
         {{-- Development scripts --}}
