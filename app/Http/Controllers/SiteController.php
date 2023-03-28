@@ -32,8 +32,10 @@ class SiteController extends Controller
         
     }
 
-    // Show 'FAQs'
-    public function faq(){
-        return view('faq');
+    // Show 'build'
+    public function build(){
+        return view('build');
     }
+
+
 }

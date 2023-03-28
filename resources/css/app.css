@@ -42,8 +42,7 @@
       @apply py-5;
     }
 
-  
-
+    
 
 
 
@@ -70,6 +69,46 @@
         @apply font-semibold;
         @apply text-xl;
     }
+
+
+    .title-2{
+      @apply mb-12;
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+      @apply font-medium;
+      @apply w-fit;
+      @apply mx-auto;
+    }
+
+    .title-2:before{
+      content: "";
+      @apply absolute;
+      @apply -right-24;
+      @apply -top-7;
+      @apply rotate-[180deg];
+      @apply w-40;
+      @apply h-1.5;
+      @apply bg-gradient-to-l;
+      @apply from-yellow-200;
+      @apply to-transparent;
+      @apply via-yellow-100;
+      @apply rounded-xl;
+      @apply hidden;
+
+    
+  }
+
+  .title-2:after{
+    content: "";
+    @apply absolute;
+    @apply -right-3;
+    @apply -bottom-3.5;
+    @apply rotate-[0deg];
+    @apply w-20;
+    @apply h-1.5;
+    @apply bg-yellow-200;
+    @apply rounded-xl;  
+}
 
     .text-general{
         @apply text-gray-500;
@@ -212,7 +251,54 @@
       top: 39px;
       left: 8px;
     }
+    
 
+
+
+
+
+
+    .close-icon{
+      @apply flex;
+      @apply flex-col;
+      @apply space-y-2;
+      @apply justify-center;
+      @apply items-center;
+      @apply w-20;
+      @apply h-16;
+      @apply transition-all;
+      @apply ease-in;
+      @apply duration-300;
+      @apply hover:scale-110;
+      @apply hover:rotate-180;
+      /* @apply bg-pink-500; */
+      
+    }
+
+    .close-icon span{
+      @apply bg-black;
+      @apply w-12;
+      @apply h-1.5;
+      @apply rounded-sm;
+      @apply transition-all;
+      @apply ease-in;
+      @apply duration-300;
+      
+    }
+
+    .close-icon span:nth-child(1){
+      @apply rotate-45;
+    }
+
+    .close-icon span:nth-child(2){
+      @apply hidden;
+    }
+
+    .close-icon span:nth-child(3){
+      @apply -rotate-45;
+      @apply relative;
+      @apply -top-3.5;
+    }
 
 
 

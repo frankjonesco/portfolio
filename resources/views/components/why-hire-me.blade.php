@@ -2,7 +2,7 @@
     <div class="container w-full lg:!w-3/4 py-40 flex flex-col items-center">
         <h2 class="text-center">Why Hire Me Vs Competitors</h2>
         <p class="w-full lg:w-1/2 text-center">Buying a quality website is like investing in a well-constructed, sturdy house. It may cost more upfront, but it is built to last.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 mt-14">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
             {{-- Row --}}
             <div class="box-card">
                 <div class="flex items-center gap-5 mb-5">

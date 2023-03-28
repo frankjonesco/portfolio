@@ -27,7 +27,7 @@ Route::controller(SiteController::class)->group(function(){
     Route::get('/', 'home')->name('home');
     Route::get('/how-it-works', 'howItWorks');
     Route::post('/contact/send', 'sendContactFormMessage');
-    Route::get('/faq', 'faq');
+    Route::get('/build', 'build');
 });
 
 

@@ -78,4 +78,23 @@
 
 
 
+    function toggleMiniNav(){
+        hamburgerMenu.classList.toggle('open');
+        navLinks.classList.toggle('-translate-x-full');
+        navLinks.classList.toggle('opacity-0');
+    }
+
+    hamburgerMenu.onclick = function() {
+      toggleMiniNav();
+
+    }
+
+    var miniNavLinks = document.querySelectorAll('ul#navLinks>li>a');
+
+    [].forEach.call(miniNavLinks, el => {
+      el.onclick = function () {
+        toggleMiniNav();
+      }
+    });
+
 </script>
