@@ -1,9 +1,9 @@
 <nav id="topNav" {{$attributes->merge(['class' => 'shift fixed top-0 w-full top-nav z-40 text-lg font-light text-white bg-transparent !bg-opacity-50 drop-shadow transition-all ease-in duration-1000']);}} style="font-family: 'Hind', sans-serif !important;">
     <div class="flex justify-between items-center px-7 lg:px-20">
-        <a href="/" id="siteLogo" class="active text-5xl font-bold drop-shadow transition-all ease duration-1000 text-white">FJ<span class="text-yellow-300">.</span></a>
+        <a href="/" id="siteLogo" class="active text-5xl font-bold drop-shadow transition-all ease-in duration-1000 text-white">FJ<span class="text-yellow-300">.</span></a>
 
         {{-- Full screen menu --}}
-        <ul id="navLinksFull" class="hidden lg:flex flex-row justify-end items-center bg-opacity-80 w-screen transition-all ease-out duration-300 text-xl">
+        <ul id="navLinksFull" class="hidden lg:flex flex-row justify-end items-center bg-opacity-80 w-screen transition-all ease-in duration-1000 text-xl">
             <li class="text-center">
                 <a href="/#what-i-do">What I do</a>
             </li>
@@ -35,10 +35,10 @@
                 <span class="hamburger-segments"></span>
             </div> --}}
 
-            <div id="hamburgerMenu" class="flex flex-col space-y-2 items-end w-16 transition-all ease-out duration-1000">
-                <span class="bg-white w-12 h-1.5 rounded-sm transition-all ease-out duration-1000"></span>
-                <span class="bg-white w-12 h-1.5 rounded-sm transition-all ease-out duration-1000"></span>
-                <span class="bg-white w-12 h-1.5 rounded-sm transition-all ease-out duration-1000"></span>
+            <div id="hamburgerMenu" class="flex flex-col space-y-2 items-end w-16 transition-all ease-in duration-1000">
+                <span class="bg-white w-12 h-1.5 rounded-sm transition-all ease-in duration-1000"></span>
+                <span class="bg-white w-12 h-1.5 rounded-sm transition-all ease-in duration-1000"></span>
+                <span class="bg-white w-12 h-1.5 rounded-sm transition-all ease-in duration-1000"></span>
               </div>
 
         </div>
@@ -50,7 +50,7 @@
 
 
 {{-- Mobile menu --}}
-<ul id="navLinks" class="fixed top-0 z-40 opacity-0 flex flex-col justify-center items-center bg-black text-white bg-opacity-80 w-screen transition-all ease-in duration-300 -translate-x-full text-2xl font-bold">
+<ul id="navLinks" class="fixed top-0 z-40 opacity-0 flex flex-col justify-center items-center bg-black text-white bg-opacity-80 w-screen transition-all ease-in duration-500 -translate-x-full text-2xl font-bold">
     <li class="text-center bg-black w-full py-4 bg-opacity-80">
         <a href="/#what-i-do" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">What I do</a>
     </li>

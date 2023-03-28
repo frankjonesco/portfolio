@@ -112,15 +112,17 @@
             <div class="block lg:hidden">
                 <div class="w-fullmt-20">
                     
-                    <div class="py-10 grid grid-cols-1 gap-10"> 
+                    <div class="flex flex-col md:flex-row items-center mt-10">
                         
-                        <div>
+                        <div class="w-full md:w-1/2 p-5">
                             <h3 class="text-3xl mb-5">1. Pick a Design</h3>
                             <p>Go to <a href="https://webflow.com/templates" target="_blank" class="font-bold bg-yellow-300 px-1.5 py-1 hover:bg-black hover:text-white transition-all ease duration-300">https://webflow.com/templates</a> and pick a design you like.</p>
                             <h3 class="text-lg">Why do I use design templates instead of designing from scratch?</h3>
                             <p><b>You save money</b> and it speeds up the project completion time. <b>It is much more expensive to design from scratch</b> as it adds a lot of time to the project.</p>
                         </div>
-                        <img src="{{asset('images/templates/templates-grid.webp')}}" alt="" width="468" height="325">
+                        <div class="mx-auto md:w-1/2 p-5">
+                            <img src="{{asset('images/templates/templates-grid.webp')}}" alt="" width="468" height="325" class="mx-auto">
+                        </div>
                     </div>
                 </div>
 
@@ -128,8 +130,8 @@
 
                 <div class="w-full relative border-t border-t-black mt-10">
                     
-                    <div class="grid grid-cols-1 gap-10 mt-10">
-                        <div>
+                    <div class="flex flex-col md:flex-row-reverse mt-10 items-center">
+                        <div class="w-full md:w-1/2 p-5">
                             <h3 class="text-3xl mb-10">2. Provide Me With Website Content</h3>
                             <p>I provide a Dropbox link where you may upload all the relevant content to be used on your site.</p>
                             <ul class="list-disc ml-5 mt-5">
@@ -143,7 +145,9 @@
                                 <li>Any Content You Want On The Site</li>
                             </ul>
                         </div>
-                        <img src="{{asset('images/dropbox.webp')}}" alt="" width="468" height="277">
+                        <div class="md:w-1/2">
+                            <img src="{{asset('images/dropbox.webp')}}" alt="" width="468" height="277" class="mx-auto">
+                        </div>
                     </div>
 
                     
@@ -154,14 +158,14 @@
 
                 <div class="w-full relative border-t border-t-black mt-10">
                    
-                    <div class="grid grid-cols-1 gap-10 mt-10">
+                    <div class="flex flex-col md:flex-row-reverse mt-10">
                         
-                        <div>
+                        <div class="w-full md:w-1/2 p-5">
                             <h3 class="text-3xl mb-10">3. Finish Build & Review</h3>
                             <p>Once I have completed building your site, I will send it over to you for review.</p>
                         </div>
                         {{-- <img src="{{asset('images/leonardo.gif')}}" width="220" height="220" class="mx-auto" alt="Leonardo"> --}}
-                        <video preload="auto" width="220" height="220" autoplay muted loop playsinline class="mx-auto">
+                        <video preload="auto" width="220" height="220" autoplay muted loop playsinline class="mx-auto md:w-1/2 p-5">
                             <source src="{{asset('images/leonardo.webm')}}" type="video/webm" />
                             <source src="{{asset('images/leonardo.mp4')}}" type="video/mp4">
                             Your browser does not support the video tag.
@@ -173,23 +177,25 @@
 
                 <div class="w-full relative border-t border-t-black mt-10">
                    
-                    <div class="grid grid-cols-1 gap-10 mt-10">
+                    <div class="flex flex-col md:flex-row mt-10">
                         
-                        <div>
+                        <div class="w-full md:w-1/2 p-5">
                             <h3 class="text-3xl mb-10">4. Enjoy Your Awesome Website!</h3>
                             <p class="mb-3">Once you review and we make any last minute changes, I'll ask you to confirm your ready for launch 🎉. </p>
                             <p>Once I have your confirmation, we'll launch your site live!</p>
                             
                         </div>
                         {{-- <img src="{{asset('images/rocket-launch.gif')}}" width="468" height="281" class="mx-auto" alt="Rocket launch"> --}}
-                        <video preload="auto" width="468" height="281" autoplay muted loop playsinline class="mx-auto">
+                        <video preload="auto" width="468" height="281" autoplay muted loop playsinline class="mx-auto md:w-1/2 p-5">
                             <source src="{{asset('images/rocket-launch.webm')}}" type="video/webm">
                             <source src="{{asset('images/rocket-launch.mp4')}}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <div class="text-center">
-                            <a href="/#contact" class="btn btn-positive mt-5 inline-block">Contact me now</a>
-                        </div>
+                        
+                    </div>
+
+                    <div class="text-center">
+                        <a href="/#contact" class="btn btn-positive mt-5 inline-block">Contact me now</a>
                     </div>
 
                     
