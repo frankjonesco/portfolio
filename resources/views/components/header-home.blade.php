@@ -1,16 +1,25 @@
+<div class="bg-black">
+    <div id="particles-js" style="background-image: url({{asset('images/backgrounds/tavira-1.webp')}})" class="slider w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col justify-center items-center !bg-opacity-50">
 
-<div id="particles-js" style="background-image: url({{asset('images/backgrounds/developer-1.webp')}});" class="w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed flex flex-col justify-center items-center">
-        
-    <x-navbar />
+      {{-- <div class="slide" style="background-image: url({{asset('images/backgrounds/tavira-1.webp')}})"></div>
+      <div class="slide" style="background-image: url({{asset('images/backgrounds/tavira-2.webp')}})"></div>
+      <div class="slide" style="background-image: url({{asset('images/backgrounds/tavira-3.webp')}})"></div>
+      <div class="slide" style="background-image: url({{asset('images/backgrounds/tavira-4.webp')}})"></div>
+      <div class="slide" style="background-image: url({{asset('images/backgrounds/tavira-5.webp')}})"></div> --}}
 
-    <h1 class="text-center m-auto text-[5rem] lg:text-[7rem] h-1/2 absolute lg:top-1/2 lg:-translate-y-[25%] font-bold text-white">Web design in Tavira<span class="text-yellow-300">.</span></h1>
-        
-    <div class="absolute bottom-0 mx-auto py-6 w-full text-center">
-        <a href="/#what-i-do" aria-label="Scroll down to learn more">
-            <i class="fa-solid fa-chevron-down font-bold text-5xl text-white animate-bounce transition-all duration-250 hover:scale-150"></i>
-        </a>
+            
+        <x-navbar />
+
+        <h1 class="text-center m-auto text-[5rem] lg:text-[7rem] h-1/2 absolute lg:top-1/2 lg:-translate-y-[25%] font-bold text-white drop-shadow-xl">Web design in Tavira<span class="text-yellow-300">.</span></h1>
+            
+        <div class="absolute bottom-0 mx-auto py-6 w-full text-center">
+            <a href="/#what-i-do" aria-label="Scroll down to learn more" class="animate-bounce shadow-xl bg-yellow-300 border-black border-4 rounded-full mx-auto w-20 !aspect-square flex items-center justify-center transition-all duration-250 hover:bg-black hover:border-black group">
+                <i class="fa-solid fa-chevron-down font-bold text-5xl text-black group-hover:text-white"></i>
+            </a>
+        </div>
     </div>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script id="rendered-js" defer>
@@ -66,7 +75,7 @@
     
         "line_linked": {
           "enable": true,
-          "distance": 120,
+          "distance": 150,
           "color": "#ffffff",
           "opacity": 1.0,
           "width": 1 } },

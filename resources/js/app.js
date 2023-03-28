@@ -14,7 +14,7 @@ function checkScrollForNav(){
     if (scroll > 40) {
         // Adjust navbar
         navbar.classList.remove('bg-transparent', 'text-white', 'py-10');
-        navbar.classList.add('bg-white', 'text-black', 'py-5');
+        navbar.classList.add('bg-gradient-to-tr', 'from-slate-200', 'via-gray-100', 'to-white', 'text-black', 'py-5');
          // Adjust navLinksFull
         navLinksFull.classList.remove('text-xl');
         navLinksFull.classList.add('text-lg');
@@ -31,7 +31,7 @@ function checkScrollForNav(){
         });
     } else {
         // Adjust navbar
-        navbar.classList.remove('bg-white', 'text-black', 'py-5');
+        navbar.classList.remove('bg-gradient-to-tr', 'from-slate-200', 'via-gray-100', 'to-white', 'text-black', 'py-5');
         navbar.classList.add('bg-transparent', 'text-white', 'py-10');
         // Adjust navLinksFull
         navLinksFull.classList.remove('text-lg');
@@ -47,6 +47,8 @@ function checkScrollForNav(){
             el.classList.add('bg-white', 'w-12', 'h-1.5');
         });
     }
+
+    
 }
 
 // Check scroll on page load

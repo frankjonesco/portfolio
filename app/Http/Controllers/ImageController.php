@@ -68,9 +68,9 @@ class ImageController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function compressToWebp(){
-        $fileExtension = '.png';
-        $imageName = 'fj-banner';
-        $destinationPath = public_path('images/');
+        $fileExtension = '.jpg';
+        $imageName = 'tavira-1';
+        $destinationPath = public_path('images/backgrounds/');
         // $imageWidth = 200;
         // $imageHeight = 150;
         
@@ -116,9 +116,9 @@ class ImageController extends Controller
     public function resizeImage(){
 
         $fileExtension = '.webp';
-        $imageName = 'fj-banner';
-        $destinationPath = public_path('images/');
-        $imageWidth = 1080;
+        $imageName = 'tavira-5';
+        $destinationPath = public_path('images/backgrounds/');
+        $imageWidth = 200;
         $imageHeight = null;
         
         $image = Image::make($destinationPath.$imageName.$fileExtension);
@@ -127,7 +127,7 @@ class ImageController extends Controller
             $constraint->aspectRatio();
         });
 
-        $image->save();
+        $image->save($destinationPath.'tn-'.$imageName.$fileExtension);
 
         return redirect('images/upload')->with('message', 'Image Has Been Resized');
     }

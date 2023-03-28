@@ -43,8 +43,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         {{-- Production scripts --}}
-        <link href="{{ asset('build/assets/app-792b1097.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
-        <script src="{{ asset('build/assets/app-b304fa97.js') }}" defer></script>
+        <link href="{{ asset('build/assets/app-e06d4f43.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
+        <script src="{{ asset('build/assets/app-dbfb98a0.js') }}" defer></script>
     @endif
 
 </head>
