@@ -5,13 +5,13 @@
         {{-- Full screen menu --}}
         <ul id="navLinksFull" class="hidden lg:flex flex-row justify-end items-center bg-opacity-80 w-screen transition-all ease-in duration-1000 text-xl">
             <li class="text-center">
-                <a href="/#what-i-do">What I do</a>
+                <a href="#" onclick="return scrollToAnchor('what-i-do')">What I do</a>
             </li>
             <li class="text-center">
-                <a href="/#why-hire-me">Why hire me</a>
+                <a href="#" onclick="return scrollToAnchor('why-hire-me')">Why hire me</a>
             </li>
             <li class="text-center">
-                <a href="/#how-it-works">How it works</a>
+                <a href="#" onclick="return scrollToAnchor('how-it-works')">How it works</a>
             </li>
             {{-- <li>
                 <a href="/#see-my-portfolio">See my portfolio</a>
@@ -20,10 +20,10 @@
                 <a href="/#reviews">Reviews</a>
             </li> --}}
             <li class="text-center">
-                <a href="/#contact">Contact me</a>
+                <a href="#" onclick="return scrollToAnchor('contact')">Contact me</a>
             </li>
             <li class="text-center">
-                <a href="/#faq">FAQs</a>
+                <a href="#" onclick="return scrollToAnchor('faq')">FAQs</a>
             </li>
         </ul>
 
@@ -52,13 +52,13 @@
 {{-- Mobile menu --}}
 <ul id="navLinks" class="fixed top-0 z-40 opacity-0 flex flex-col justify-center items-center bg-black text-white bg-opacity-80 w-screen transition-all ease-in duration-500 -translate-x-full text-2xl font-bold">
     <li class="text-center bg-black w-full py-4 bg-opacity-80">
-        <a href="/#what-i-do" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">What I do</a>
+        <a href="#" onclick="return scrollToAnchor('what-i-do')" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">What I do</a>
     </li>
     <li class="text-center bg-black w-full py-4 bg-opacity-80">
-        <a href="/#why-hire-me" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">Why hire me</a>
+        <a href="#" onclick="return scrollToAnchor('why-hire-me')" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">Why hire me</a>
     </li>
     <li class="text-center bg-black w-full py-4 bg-opacity-80">
-        <a href="/#how-it-works" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">How it works</a>
+        <a href="#" onclick="return scrollToAnchor('how-it-works')" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">How it works</a>
     </li>
     {{-- <li>
         <a href="/#see-my-portfolio">See my portfolio</a>
@@ -67,14 +67,33 @@
         <a href="/#reviews">Reviews</a>
     </li> --}}
     <li class="text-center bg-black w-full py-4 bg-opacity-80">
-        <a href="/#contact" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">Contact me</a>
+        <a href="#" onclick="return scrollToAnchor('contact')" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">Contact me</a>
     </li>
     <li class="text-center bg-black w-full py-4 bg-opacity-80">
-        <a href="/#faq" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">FAQs</a>
+        <a href="#" onclick="return scrollToAnchor('faq')" class="inline-block hover:translate-y-1 transition-transform ease-in duration-200">FAQs</a>
     </li>
 </ul>
 
 <script>
+
+
+
+
+
+    function scrollToAnchor(anchor){
+        var element = document.getElementById(anchor);
+        var headerOffset = 84;
+        var elementPosition = element.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
+        });
+
+        return false;
+    }
+
 
 
 
