@@ -9,10 +9,10 @@
             </h1>
             <div>
                 <p class="text-xl text-gray-500 leading-relaxed font-light mb-10 text-center lg:text-left">
-                    I'm a web designer & developer local to Tavira, Algarve. I specialise in creating attractive websites for small business such as accountants, dental practices, restaurants, private healthcare, law firms and estate agents.
+                    I specialise in creating attractive websites for small businesses such as accountants, dental practices, restaurants, private healthcare, law firms<br>and estate agents.
                 </p>
                 <p class="text-xl text-gray-500 leading-relaxed font-light mb-10 text-center lg:text-left">
-                    With more than 15 years experience in the industry, I produce quality work at competitive prices.
+                    I produce <span class="!underline !underline-offset-2">Quality Work</span> at a <span class="!underline !underline-offset-2">Rapid Rate</span> for an <span class="!underline !underline-offset-2">Affordable Price</span>.
                 </p>
                 <p class="text-xl text-gray-500 leading-relaxed font-light mb-10 text-center lg:text-left">
                     <a href="#contact" class="bg-yellow-300 text-black px-2 py-0.5 transition-all ease duration-500 font-bold hover:bg-black hover:text-white">Contact me</a> today to discuss your next project and get a quote.
@@ -25,7 +25,7 @@
         </div>
 
         <div class="w-full lg:w-1/5 hidden lg:block">
-            <div class="lg:grid grid-cols-2 gap-1">
+            <div class="lg:grid grid-cols-2 gap-1 p-5">
                 <div style="background-image: url({{asset('images/backgrounds/tn-tavira-2.webp')}})" class="w-full aspect-square bg-cover bg-center bg-no-repeat rounded-tl-full">
                 </div>
                 <div class="bg-orange-500 w-full aspect-square rounded-tr-full"></div>
