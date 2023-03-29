@@ -1,17 +1,17 @@
-<nav id="topNav" {{$attributes->merge(['class' => 'shift fixed top-0 w-full top-nav z-40 text-lg font-light text-white bg-transparent !bg-opacity-50 drop-shadow transition-all ease-in duration-200']);}} style="font-family: 'Hind', sans-serif !important;">
+<nav id="topNav" {{$attributes->merge(['class' => 'shift fixed top-0 w-full top-nav z-40 text-lg font-light text-white bg-transparent !bg-opacity-50 drop-shadow transition-all ease-in duration-500']);}} style="font-family: 'Hind', sans-serif !important;">
     <div class="flex justify-between items-center px-7 lg:px-20">
-        <a href="/" id="siteLogo" class="active text-5xl font-bold drop-shadow transition-all ease-in duration-300 text-white">FJ<span class="text-yellow-300">.</span></a>
+        <a href="/" id="siteLogo" class="active text-5xl font-bold drop-shadow transition-all ease-in duration-300 text-white hover:scale-125">FJ<span class="text-yellow-300">.</span></a>
 
         {{-- Full screen menu --}}
         <ul id="navLinksFull" class="hidden lg:flex flex-row justify-end items-center w-screen transition-all ease-in duration-300 text-xl">
             <li class="text-center">
-                <a href="#" onclick="return scrollToAnchor('what-i-do')" class="bg-black bg-opacity-10 hover:bg-opacity-0 hover:scale-125 hover:z-50 trsansition-all ease-in duration-150">What I do</a>
+                <a href="#" onclick="return scrollToAnchor('what-i-do')" class="bg-transparent font-bold bg-opacity-10 hover:bg-opacity-0 hover:border-none hover:scale-125 hover:z-50 trsansition-all ease-in duration-150">What I do</a>
             </li>
             <li class="text-center">
-                <a href="#" onclick="return scrollToAnchor('why-hire-me')" class="bg-black bg-opacity-10 hover:bg-opacity-0 hover:scale-125 hover:z-50 trsansition-all ease-in duration-150">Why hire me</a>
+                <a href="#" onclick="return scrollToAnchor('why-hire-me')" class="bg-transparent font-bold bg-opacity-10 hover:bg-opacity-0 hover:border-none hover:scale-125 hover:z-50 trsansition-all ease-in duration-150">Why hire me</a>
             </li>
             <li class="text-center">
-                <a href="#" onclick="return scrollToAnchor('how-it-works')" class="bg-black bg-opacity-10 hover:bg-opacity-0 hover:scale-125 hover:z-50 trsansition-all ease-in duration-150">How it works</a>
+                <a href="#" onclick="return scrollToAnchor('how-it-works')" class="bg-transparent font-bold bg-opacity-10 hover:bg-opacity-0 hover:border-none hover:scale-125 hover:z-50 trsansition-all ease-in duration-150">How it works</a>
             </li>
             {{-- <li>
                 <a href="/#see-my-portfolio">See my portfolio</a>
@@ -20,10 +20,10 @@
                 <a href="/#reviews">Reviews</a>
             </li> --}}
             <li class="text-center">
-                <a href="#" onclick="return scrollToAnchor('contact')" class="bg-black bg-opacity-10 hover:bg-opacity-0 hover:scale-125 hover:z-50 trsansition-all ease-in duration-150">Contact me</a>
+                <a href="#" onclick="return scrollToAnchor('contact')" class="bg-transparent font-bold bg-opacity-10 hover:border-none hover:bg-opacity-0 hover:scale-125 hover:z-50 trsansition-all ease-in duration-150">Contact me</a>
             </li>
             <li class="text-center">
-                <a href="#" onclick="return scrollToAnchor('faq')" class="bg-black bg-opacity-10 hover:bg-opacity-0 hover:scale-125 hover:z-50 trsansition-all ease-in duration-150">FAQs</a>
+                <a href="#" onclick="return scrollToAnchor('faq')" class="bg-transparent font-bold bg-opacity-10 hover:border-none hover:scale-125 hover:z-50 trsansition-all ease-in duration-150">FAQs</a>
             </li>
         </ul>
 

@@ -5,6 +5,7 @@ const body = document.getElementsByTagName('body')[0];
 const siteLogo = document.querySelector("#siteLogo");
 const navbar = document.querySelector("#topNav");
 const navLinksFull = document.querySelector("#navLinksFull");
+const navLinksFullText = document.querySelectorAll("#navLinksFull>li>a");
 const hamburgerMenu = document.querySelector("#hamburgerMenu");
 const hamburgerSegments = document.querySelectorAll("#hamburgerMenu>span");
 
@@ -14,10 +15,15 @@ function checkScrollForNav(){
     if (scroll > 40) {
         // Adjust navbar
         navbar.classList.remove('bg-transparent', 'text-white', 'py-10');
-        navbar.classList.add('bg-gradient-to-tr', 'from-slate-200', 'via-gray-100', 'to-white', 'text-black', 'py-5');
+        navbar.classList.add('bg-white', 'text-black', 'py-5');
          // Adjust navLinksFull
         navLinksFull.classList.remove('text-xl');
         navLinksFull.classList.add('text-lg');
+        [].forEach.call(navLinksFullText, el => {
+            el.classList.remove('bg-transparent', 'font-bold');
+          	el.classList.add('bg-black', 'font-normal');
+          
+      	});
         // Adjust site logo
         siteLogo.classList.remove('text-5xl', 'text-white');
         siteLogo.classList.add('text-4xl', 'text-black');    
@@ -26,16 +32,20 @@ function checkScrollForNav(){
         hamburgerMenu.classList.add('space-y-1');
         [].forEach.call(hamburgerSegments, el => {
             el.classList.remove('bg-white', 'w-12', 'h-1.5');
-            el.classList.add('bg-black', 'w-7', 'h-1');
-            
+            el.classList.add('bg-black', 'w-7', 'h-1'); 
         });
     } else {
         // Adjust navbar
-        navbar.classList.remove('bg-gradient-to-tr', 'from-slate-200', 'via-gray-100', 'to-white', 'text-black', 'py-5');
+        navbar.classList.remove('bg-white', 'text-black', 'py-5');
         navbar.classList.add('bg-transparent', 'text-white', 'py-10');
         // Adjust navLinksFull
         navLinksFull.classList.remove('text-lg');
         navLinksFull.classList.add('text-xl');
+		[].forEach.call(navLinksFullText, el => {
+			el.classList.remove('bg-black', 'font-normal');
+			el.classList.add('bg-transparent', 'font-bold');
+          
+		});
         // Adjust site logo
         siteLogo.classList.remove('text-4xl', 'text-black');
         siteLogo.classList.add('text-5xl', 'text-white');

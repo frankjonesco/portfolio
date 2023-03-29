@@ -17,6 +17,26 @@
                 <i class="fa-solid fa-chevron-down font-bold text-5xl text-black group-hover:text-white"></i>
             </a>
         </div>
+
+        <div class="absolute bottom-0 w-full px-7 lg:px-16 pb-7 lg:pb-12 text-white">
+          	<ul class="flex space-x-8 text-4xl">
+            	<li>
+              		<a href="https://www.facebook.com/people/Frank-Jones-Web-Design-in-Tavira/100091050921324/" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150">
+                		<i class="fa-brands fa-facebook-f"></i>
+					</a>
+            	</li>
+				<li>
+					<a href="https://twitter.com/frankjonesco" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/frankjonesco" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150">
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</li>
+          	</ul>
+        </div>
     </div>
 </div>
 
