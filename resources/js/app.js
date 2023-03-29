@@ -7,7 +7,9 @@ const navbar = document.querySelector("#topNav");
 const navLinksFull = document.querySelector("#navLinksFull");
 const navLinksFullText = document.querySelectorAll("#navLinksFull>li>a");
 const hamburgerMenu = document.querySelector("#hamburgerMenu");
+const hamburgerMenu2 = document.querySelector("#hamburgerMenu2");
 const hamburgerSegments = document.querySelectorAll("#hamburgerMenu>span");
+const hamburgerSegments2 = document.querySelectorAll("#hamburgerMenu2>span");
 
 // Check scroll for nav function
 function checkScrollForNav(){

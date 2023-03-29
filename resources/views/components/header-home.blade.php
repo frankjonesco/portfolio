@@ -41,7 +41,7 @@
 					</a>
 				</li>
           	</ul>
-			<a href="#" onclick="return scrollToAnchor('contact')" class="block text-3xl font-bold animate-pulse transition-all ease-in duration-150 hover:scale-125">
+			<a href="#" onclick="return scrollToAnchor('contact')" class="hover-yellow-btn block text-3xl font-bold animate-pulse transition-all ease-in duration-150 hover:scale-125 hover:animate-none">
 				Get Started
 			</a>
         </div>
