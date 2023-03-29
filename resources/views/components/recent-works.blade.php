@@ -1,6 +1,6 @@
 <section id="recent-works" class="py-28">
     <div class="container">
-        <h2 class="eczar mb-10">Recent works</h2>
+        <h2 class="font-eczar mb-10">Recent works</h2>
 
         <ul class="flex gap-10 mb-10">
             <li class="text-2xl text-gray-500 font-thin">

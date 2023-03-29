@@ -1,25 +1,25 @@
 
     <section id="how-it-works">
         <div class="container w-full lg:!w-3/4 py-40 flex flex-col items-center">
-            <h2>How It Works</h2>
+            <h2 class="text-center title-2 text-black">How It Works</h2>
 
-            <p class="w-full lg:w-1/2 text-center">We have developed a simple four step process to help you set up your quality website and get it online as quickly as possible.</p>
+            <h3>We have developed a simple four step process to help you set up your quality website and get it online as quickly as possible.</h3>
 
 
 
 
 
             <div class="hidden lg:block">
-                <div class="w-full border-l-4 border-b-4 border-gray-400 rounded-bl-3xl mt-20">
+                <div class="w-full border-l-4 border-b-4 border-gray-400 rounded-bl-3xl">
                     <div class="bg-black rounded-full w-16 aspect-square text-white text-3xl font-bold flex justify-center items-center relative -left-9 -top-0">
                         <span class="relative top-[2px] -left-[1px]">1</span>
                     </div>
                     <div class="p-20 grid grid-cols-2 gap-20">
                         
                         <div>
-                            <h3 class="text-3xl mb-3">Pick a Design</h3>
+                            <h4>Pick a Design</h4>
                             <p>Go to <a href="https://webflow.com/templates" target="_blank" class="font-bold bg-yellow-300 px-1.5 py-1 hover:bg-black hover:text-white transition-all ease duration-300">https://webflow.com/templates</a> and pick a design you like.</p>
-                            <h3 class="text-lg">Why do I use design templates instead of designing from scratch?</h3>
+                            <p class="font-bold">Why do I use design templates instead of designing from scratch?</p>
                             <p><b>You save money</b> and it speeds up the project completion time. <b>It is much more expensive to design from scratch</b> as it adds a lot of time to the project.</p>
                         </div>
                         <img src="{{asset('images/templates/templates-grid.webp')}}" alt="" width="468" height="325">
@@ -35,7 +35,7 @@
                     <div class="p-20 grid grid-cols-2 gap-20">
                         <img src="{{asset('images/dropbox.webp')}}" alt="" width="468" height="277">
                         <div>
-                            <h3 class="text-3xl mb-3">Provide Me With Website Content</h3>
+                            <h4>Provide Me With Website Content</h4>
                             <p>I provide a Dropbox link where you may upload all the relevant content to be used on your site.</p>
                             <ul class="list-disc ml-5 mt-5">
                                 <li>Photos</li>
@@ -64,7 +64,7 @@
                     <div class="p-20 grid grid-cols-2 gap-20">
                         
                         <div>
-                            <h3 class="text-3xl mb-3">Finish Build & Review</h3>
+                            <h4>Finish Build & Review</h4>
                             <p>Once I have completed building your site, I will send it over to you for review.</p>
                         </div>
                         {{-- <img src="{{asset('images/leonardo.gif')}}" width="220" height="220" class="mx-auto" alt="Leonardo"> --}}
@@ -90,7 +90,7 @@
                             Your browser does not support the video tag.
                         </video>
                         <div>
-                            <h3 class="text-3xl mb-3">Enjoy Your Awesome Website!</h3>
+                            <h4>Enjoy Your Awesome Website!</h4>
                             <p class="mb-3">Once you review and we make any last minute changes, I'll ask you to confirm your ready for launch 🎉. </p>
                             <p>Once I have your confirmation, we'll launch your site live!</p>
                             <a href="/#contact" class="btn btn-positive mt-5 inline-block">Contact me now</a>

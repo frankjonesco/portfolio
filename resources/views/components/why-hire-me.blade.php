@@ -1,7 +1,7 @@
 <section id="why-hire-me" class="bg-gradient-to-br from-yellow-50 to-white border-b drop-shadow-xl">
     <div class="container w-full lg:!w-3/4 py-40 flex flex-col items-center">
-        <h2 class="text-center">Why Hire Me Vs Competitors</h2>
-        <p class="w-full lg:w-1/2 text-center">Buying a quality website is like investing in a well-constructed, sturdy house. It may cost more upfront, but it is built to last.</p>
+        <h2 class="text-center title-2 text-black">Why Hire Me Vs Competitors</h2>
+        <h3>Buying a quality website is like investing in a well-constructed, sturdy house. It may cost more upfront, but it is built to last.</h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
             {{-- Row --}}
             <div class="box-card">

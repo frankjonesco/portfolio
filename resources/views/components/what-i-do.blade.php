@@ -2,7 +2,7 @@
     <div class="container py-40 flex">
 
         <div class="w-full lg:w-4/5">
-            <h1 class="eczar text-3xl md:text-5xl leading-tight mb-5 js-show-on-scroll text-center lg:text-left">
+            <h1 class="font-eczar text-3xl md:text-5xl leading-tight mb-5 js-show-on-scroll text-center lg:text-left">
                 I'm Frank Jones,<br>
                 Web Designer & Web Developer<br>
                 based in Tavira, Alrgarve.
@@ -15,11 +15,11 @@
                     I produce <span class="!underline !underline-offset-2">Quality Work</span> at a <span class="!underline !underline-offset-2">Rapid Rate</span> for an <span class="!underline !underline-offset-2">Affordable Price</span>.
                 </p>
                 <p class="text-gray-500 leading-relaxed font-light mb-10">
-                    <a href="#contact" class="bg-yellow-300 text-black px-2 py-0.5 transition-all ease duration-500 font-bold hover:bg-black hover:text-white">Contact me</a> today to discuss your next project and get a quote.
+                    <a href="#contact" class="bg-yellow-300 text-black px-2 py-0.5 transition-all ease duration-500 font-bold hover:bg-black hover:text-white">Contact me</a> today to see how I can help get your business online.
                 </p>
                 <div class="text-center lg:text-left mt-12">
                     <a href="{{asset('documents/frank-jones-cv-download-2023.pdf')}}" target="_blank" class="btn btn-positive mr-6">Download CV</a>
-                    <a href="#contact" class="btn btn-negative">Get in touch</a>
+                    <a href="#contact" class="btn btn-negative">Request a service</a>
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
                 <div style="background-image: url({{asset('images/backgrounds/tn-tavira-4.webp')}})" class="w-full aspect-square bg-cover bg-center bg-no-repeat">
                 </div>
                 
-                <div style="background-image: url({{asset('images/backgrounds/tn-tavira-3.webp')}})" class="w-full aspect-square bg-cover bg-center bg-no-repeat">
+                <div id="fj" style="background-image: url({{asset('images/fj2.png')}});" class="w-full aspect-square bg-cover bg-center bg-no-repeat">
                 </div>
                 <div class="bg-lime-500 w-full aspect-square rounded-bl-full"></div>
                 

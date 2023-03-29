@@ -16,8 +16,8 @@ function checkScrollForNav(){
     var scroll = window.pageYOffset;
     if (scroll > 40) {
         // Adjust navbar
-        navbar.classList.remove('bg-transparent', 'text-white', 'py-10');
-        navbar.classList.add('bg-white', 'text-black', 'py-5');
+        navbar.classList.remove('bg-transparent', 'text-white', 'py-10', 'shadow-none');
+        navbar.classList.add('bg-pink-50', 'text-black', 'py-5', 'shadow-xl');
          // Adjust navLinksFull
         navLinksFull.classList.remove('text-xl');
         navLinksFull.classList.add('text-lg');
@@ -38,8 +38,8 @@ function checkScrollForNav(){
         });
     } else {
         // Adjust navbar
-        navbar.classList.remove('bg-white', 'text-black', 'py-5');
-        navbar.classList.add('bg-transparent', 'text-white', 'py-10');
+        navbar.classList.remove('bg-pink-50', 'text-black', 'py-5', 'shadow-xl');
+        navbar.classList.add('bg-transparent', 'text-white', 'py-10', 'shadow-none');
         // Adjust navLinksFull
         navLinksFull.classList.remove('text-lg');
         navLinksFull.classList.add('text-xl');

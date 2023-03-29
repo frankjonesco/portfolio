@@ -8,7 +8,7 @@
 
 
         @unless(session()->has('success'))
-            <p class="pb-12 text-2xl text-center leading-10 text-gray-500 font-light">Get started right away!<br>I'm happy to answer any questions you might have.</p>
+            <h3>Get started right away!<br>Tell me what web design services you need and I'll get right back to you.</h3>
             <form id="contactForm" action="/contact/send#contact" method="POST" class="text-center">
                 @csrf
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">

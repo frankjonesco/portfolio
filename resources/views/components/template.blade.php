@@ -35,7 +35,7 @@
 
     {{-- Assert builds --}}
     @php
-        $environment = 'prod';
+        $environment = 'dev';
     @endphp
     @if($environment == 'dev')
         {{-- Development scripts --}}
@@ -43,8 +43,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         {{-- Production scripts --}}
-        <link href="{{ asset('build/assets/app-030d1025.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
-        <script src="{{ asset('build/assets/app-24679aa5.js') }}" defer></script>
+        <link href="{{ asset('build/assets/app-4744a099.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
+        <script src="{{ asset('build/assets/app-85522041.js') }}" defer></script>
     @endif
 
 </head>

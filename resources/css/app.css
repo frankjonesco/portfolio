@@ -9,6 +9,7 @@
 
 @layer base {
 
+	/* Global styles */
 
     *{
         margin: 0;
@@ -23,8 +24,6 @@
       	overflow-x: hidden;
     }
 
-    /* BODY */
-
     body{
         font-family: 'Poppins', sans-serif;
         @apply text-gray-900;
@@ -32,7 +31,7 @@
     }
 
 
-
+	/* Layout styles */
 
     .container{
       	@apply !w-full;
@@ -42,91 +41,106 @@
       	@apply py-5;
     }
 
-    
+	.box-card{
+		@apply bg-white;
+		@apply rounded-xl;
+		@apply p-6;
+		@apply transition-all;
+		@apply ease-out;
+		@apply duration-300;
+		@apply drop-shadow;
+		@apply hover:drop-shadow-2xl;
+		@apply hover:-translate-y-3;
+	}
 
 
+    /* Text styles */
 
-    /* Text Styles */
-
-    .eczar{
+    .font-eczar{
         font-family: 'Eczar', serif;
     }
 
-
-
     h2{
         @apply text-4xl;
-        @apply eczar;
+        @apply font-eczar;
         @apply mb-10;
     }
 
-    h3{
+	.title-2{
+		@apply mb-12;
+		position: relative;
+		font-family: 'Poppins', sans-serif;
+		@apply font-medium;
+		@apply w-fit;
+		@apply mx-auto;
+	}
+
+	.title-2:before{
+		content: "";
+		@apply absolute;
+		@apply -right-24;
+		@apply -top-7;
+		@apply rotate-[180deg];
+		@apply w-40;
+		@apply h-1.5;
+		@apply bg-gradient-to-l;
+		@apply from-yellow-200;
+		@apply to-transparent;
+		@apply via-yellow-100;
+		@apply rounded-xl;
+		@apply hidden;
+	}
+
+	.title-2:after{
+		content: "";
+		@apply absolute;
+		@apply -right-3;
+		@apply -bottom-3.5;
+		@apply rotate-[0deg];
+		@apply w-20;
+		@apply h-1.5;
+		@apply bg-yellow-200;
+		@apply rounded-xl;  
+	}
+
+	h3{
+		@apply pb-12;
+		@apply mx-auto;
+		@apply text-xl;
+		@apply text-center;
+		@apply leading-snug;
+		@apply text-gray-500;
+		@apply font-light;
+		@apply text-center;
+		@apply w-full;
+		@apply lg:w-1/2;
+	}
+
+    h4{
         @apply text-base;
         @apply uppercase;
         @apply mt-5;
-        @apply mb-2;
         @apply normal-case;
         @apply font-semibold;
         @apply text-xl;
+		@apply text-3xl;
+		@apply mb-3;
     }
+
+	h5{
+		@apply font-bold;
+		@apply text-xl;
+		@apply leading-snug;
+		@apply my-4;
+	}
 
     p{
       	@apply !mb-3;
     }
 
 
-    .title-2{
-      	@apply mb-12;
-      	position: relative;
-      	font-family: 'Poppins', sans-serif;
-      	@apply font-medium;
-      	@apply w-fit;
-      	@apply mx-auto;
-    }
-
-    .title-2:before{
-      	content: "";
-      	@apply absolute;
-      	@apply -right-24;
-      	@apply -top-7;
-      	@apply rotate-[180deg];
-      	@apply w-40;
-      	@apply h-1.5;
-      	@apply bg-gradient-to-l;
-      	@apply from-yellow-200;
-      	@apply to-transparent;
-      	@apply via-yellow-100;
-      	@apply rounded-xl;
-      	@apply hidden;
-  	}
-
-  	.title-2:after{
-    	content: "";
-    	@apply absolute;
-    	@apply -right-3;
-    	@apply -bottom-3.5;
-    	@apply rotate-[0deg];
-    	@apply w-20;
-    	@apply h-1.5;
-    	@apply bg-yellow-200;
-    	@apply rounded-xl;  
-	}
-
-    .text-general{
-        @apply text-gray-500;
-        @apply font-thin;
-    }
-
-    .blog-date{
-        @apply my-3.5;
-        @apply text-sm;
-        @apply text-gray-400;
-    }
-
-
-
-
-
+	/* Button styles */
+    
     .btn{
         @apply bg-white;
         @apply border;
@@ -155,50 +169,28 @@
     }
     
 
+	/* Hamburger menu styles */
 
-
-
-
-
-
-    .hamburgerMenu {
-        
+    .hamburgerMenu {        
         position: relative;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
-        /* -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
-        transition: .5s ease-in-out; */
         cursor: pointer;
     }
 
     .hamburgerMenu span {
         display: block;
-        /* position: absolute;
-        height: 9px;
-        width: 100%;
-        @apply bg-white;
-        border-radius: 9px;  - Tailwind classes are used in navbar view */ 
         opacity: 1;
         left: 0;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
-        /* -webkit-transition: .1s ease-in-out;
-        -moz-transition: .1s ease-in-out;
-        -o-transition: .1s ease-in-out;
-        transition: .1s ease-in-out; */
-    }
-
-    .hamburgerMenu {
     }
 
     .hamburgerMenu span:nth-child(1) {
-      	/* top: 0px; */
       	-webkit-transform-origin: left center;
       	-moz-transform-origin: left center;
       	-o-transform-origin: left center;
@@ -206,7 +198,6 @@
     }
 
     .hamburgerMenu span:nth-child(2) {
-      	/* top: 18px; */
       	-webkit-transform-origin: left center;
       	-moz-transform-origin: left center;
       	-o-transform-origin: left center;
@@ -214,7 +205,6 @@
     }
 
     .hamburgerMenu span:nth-child(3) {
-      	/* top: 36px; */
       	-webkit-transform-origin: left center;
       	-moz-transform-origin: left center;
       	-o-transform-origin: left center;
@@ -226,7 +216,6 @@
       	-moz-transform: rotate(45deg);
       	-o-transform: rotate(45deg);
       	transform: rotate(45deg);
-      	
     }
 
     .hamburgerMenu.open span:nth-child(2) {
@@ -244,52 +233,7 @@
     }
     
 
-
-
-
-
-
-    .close-icon{
-      	@apply flex;
-      	@apply flex-col;
-      	@apply space-y-2;
-     	@apply justify-center;
-      	@apply items-center;
-      	@apply w-20;
-      	@apply h-16;
-      	@apply transition-all;
-      	@apply ease-in;
-      	@apply duration-300;
-      	@apply hover:scale-110;
-      	@apply hover:rotate-180;
-      	/* @apply bg-pink-500; */
-    }
-
-    .close-icon span{
-      	@apply bg-black;
-      	@apply w-12;
-      	@apply h-1.5;
-      	@apply rounded-sm;
-      	@apply transition-all;
-      	@apply ease-in;
-      	@apply duration-300;
-    }
-
-    .close-icon span:nth-child(1){
-      	@apply rotate-45;
-    }
-
-    .close-icon span:nth-child(2){
-      	@apply hidden;
-    }
-
-    .close-icon span:nth-child(3){
-      	@apply -rotate-45;
-      	@apply relative;
-      	@apply -top-3.5;
-    }
-
-
+	/* Navbar styles */
 
     nav ul {
         list-style: none;
@@ -319,8 +263,7 @@
     
 	}
 
-
-    /* SHIFT */
+    /* Shift navbar animation */
 
     nav.shift ul li a, a.hover-yellow-btn {
       	position:relative;
@@ -359,70 +302,13 @@
     }
 
 
-    /* Keyframes */
+	
     
-	@-webkit-keyframes fill {
-    	0% {
-        	width: 0%;
-        	height: 1px;
-      	}
-      
-		50% {
-        	width: 100%;
-        	height: 1px;
-      	}
-      
-		100% {
-        	width: 100%;
-        	height: 100%;
-        	background: #333;
-      	}
-    }
-
-    /* Keyframes */
-
-    @-webkit-keyframes circle {
-      	0% {
-        	width: 1px;
-        	top: 0;
-        	left: 0;
-        	bottom: 0;
-        	right: 0; 
-        	margin: auto;
-        	height: 1px;
-        	z-index: -1;
-        	background: #eee;
-        	border-radius: 100%;
-      	}
-      	
-		100% {
-        	background: #aaa;
-        	height: 5000%;
-        	width: 5000%;
-        	z-index: -1;
-       	 	top: 0;
-        	bottom: 0;
-        	left: 0;
-        	right: 0;
-        	margin: auto;
-        	border-radius: 0;
-      	}
-    }
 
    
 
 
-    .box-card{
-      	@apply bg-white;
-      	@apply rounded-xl;
-      	@apply p-6;
-      	@apply transition-all;
-      	@apply ease-out;
-      	@apply duration-300;
-      	@apply drop-shadow;
-      	@apply hover:drop-shadow-2xl;
-      	@apply hover:-translate-y-3;
-    }
+    
 
 
 
@@ -481,6 +367,34 @@
         	animation-timing-function: ease;
       	}
     }
+
+	
+
+
+	.clients-grid>div{
+		@apply w-40;
+		@apply h-32;
+		@apply flex;
+		@apply justify-center;
+		@apply items-center;
+		@apply mb-3;
+		@apply bg-white;
+		@apply shadow;
+		@apply transition-all;
+		@apply ease-out;
+		@apply duration-300;
+		@apply hover:scale-150;
+		@apply hover:shadow-xl;
+		@apply hover:z-30;
+		
+	}
+
+	.clients-grid>div>a>img{
+		@apply w-full;
+		@apply aspect-auto;
+		@apply p-3;
+		
+	}
 
 }
 
