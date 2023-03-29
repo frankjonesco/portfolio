@@ -13,13 +13,13 @@
         <h1 class="text-center m-auto text-[5rem] lg:text-[7rem] h-1/2 absolute lg:top-1/2 lg:-translate-y-[25%] font-bold text-white drop-shadow-xl">Web design in Tavira<span class="text-yellow-300">.</span></h1>
             
         <div class="absolute bottom-0 mx-auto py-6 w-full text-center">
-            <a href="/#what-i-do" aria-label="Scroll down to learn more" class="animate-bounce shadow-xl bg-yellow-300 border-black border-4 rounded-full mx-auto w-20 !aspect-square flex items-center justify-center transition-all duration-250 hover:bg-black hover:border-black group">
+            <a href="/#what-i-do" aria-label="Scroll down to learn more" class="animate-bounce shadow-xl bg-yellow-300 bg-opacity-60 border-black border-4 rounded-full mx-auto w-20 !aspect-square flex items-center justify-center transition-all duration-250 hover:bg-black hover:border-black group">
                 <i class="fa-solid fa-chevron-down font-bold text-5xl text-black group-hover:text-white"></i>
             </a>
         </div>
 
-        <div class="absolute bottom-0 w-full px-7 lg:px-16 pb-7 lg:pb-12 text-white">
-          	<ul class="flex space-x-8 text-4xl">
+        <div class="absolute bottom-0 w-full px-7 lg:px-16 pb-7 lg:pb-12 text-white flex justify-between">
+          	<ul class="flex space-x-8 text-4xl animate-pulse">
             	<li>
               		<a href="https://www.facebook.com/people/Frank-Jones-Web-Design-in-Tavira/100091050921324/" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150">
                 		<i class="fa-brands fa-facebook-f"></i>
@@ -35,7 +35,15 @@
 						<i class="fa-brands fa-github"></i>
 					</a>
 				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/frankjonesweb/" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</li>
           	</ul>
+			<a href="#" onclick="return scrollToAnchor('contact')" class="block text-3xl font-bold animate-pulse transition-all ease-in duration-150 hover:scale-125">
+				Get Started
+			</a>
         </div>
     </div>
 </div>
