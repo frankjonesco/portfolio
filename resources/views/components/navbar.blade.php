@@ -45,7 +45,7 @@
     <li>
         <div class="absolute top-0 left-0 w-full">
             <div class="my-10 mx-7 flex justify-between">
-                <a href="/" id="siteLogo" class="active text-5xl font-bold drop-shadow text-white hover:scale-125" style="font-family: 'Hind', sans-serif !important;">FJ<span class="text-yellow-300">.</span></a>
+                <a href="/" id="siteLogoMobile" class="active text-5xl font-bold drop-shadow text-white hover:scale-125" style="font-family: 'Hind', sans-serif !important;">FJ<span class="text-yellow-300">.</span></a>
                 <div id="hamburgerMenu2" class="hamburgerMenu flex flex-col space-y-2 items-end w-16 transition-all ease-in duration-300">
                     <span class="bg-white w-12 h-1.5 rounded-sm transition-all ease-in duration-300"></span>
                     <span class="bg-white w-12 h-1.5 rounded-sm transition-all ease-in duration-300"></span>

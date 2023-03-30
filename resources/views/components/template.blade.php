@@ -9,7 +9,7 @@
 
     <title>Web design in Tavira - Professional web design for local business</title>
     <meta name="description" content="Professional web design for local business in the Algarve. We specialise in creating attractive websites for small business such at affordable prices.">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width">
 
 
     {{-- Open graph information --}}
@@ -35,7 +35,7 @@
 
     {{-- Assert builds --}}
     @php
-        $environment = 'dev';
+        $environment = 'prod';
     @endphp
     @if($environment == 'dev')
         {{-- Development scripts --}}
@@ -43,7 +43,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @else
         {{-- Production scripts --}}
-        <link href="{{ asset('build/assets/app-4744a099.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
+        <link href="{{ asset('build/assets/app-4bd678ff.css') }}"  rel="preload" as="style" onload="this.rel='stylesheet'">
         <script src="{{ asset('build/assets/app-85522041.js') }}" defer></script>
     @endif
 

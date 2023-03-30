@@ -21,22 +21,22 @@
         <div class="z-20 absolute bottom-8 md:bottom-0 w-full px-7 lg:px-16 pb-7 lg:pb-12 text-white flex flex-col-reverse md:flex-row justify-between items-center">
           	<ul class="flex space-x-8 text-4xl animate-pulse">
             	<li>
-              		<a href="https://www.facebook.com/people/Frank-Jones-Web-Design-in-Tavira/100091050921324/" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150">
+              		<a href="https://www.facebook.com/people/Frank-Jones-Web-Design-in-Tavira/100091050921324/" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150" aria-label="Connent with Frank Jones Tavira Web Design on Facebook">
                 		<i class="fa-brands fa-facebook-f"></i>
 					</a>
             	</li>
 				<li>
-					<a href="https://twitter.com/frankjonesco" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150">
+					<a href="https://twitter.com/frankjonesco" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150" aria-label="Connent with Frank Jones Tavira Web Design on Twitter">
 						<i class="fa-brands fa-twitter"></i>
 					</a>
 				</li>
 				<li>
-					<a href="https://github.com/frankjonesco" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150">
+					<a href="https://github.com/frankjonesco" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150" aria-label="Connent with Frank Jones Tavira Web Design on Github">
 						<i class="fa-brands fa-github"></i>
 					</a>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/frankjonesweb/" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150">
+					<a href="https://www.linkedin.com/in/frankjonesweb/" target="_blank" class="transition-all ease-in duration-150 block hover:scale-150"  aria-label="Connent with Frank Jones Tavira Web Design on Linkedin">
 						<i class="fa-brands fa-linkedin"></i>
 					</a>
 				</li>
@@ -49,7 +49,7 @@
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.9.2/dist/tsparticles.min.js" integrity="sha256-5kED68Spy7K2CEbfu4CjV92DmZR5ZQFUoIR5qmPzZWg=" crossorigin="anonymous"></script>
 <script id="rendered-js" defer>
     /* ---- particles.js config ---- */
     

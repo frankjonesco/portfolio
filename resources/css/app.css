@@ -127,7 +127,7 @@
 		@apply mb-3;
     }
 
-	h5{
+	p.heading{
 		@apply font-bold;
 		@apply text-xl;
 		@apply leading-snug;
@@ -396,5 +396,41 @@
 		
 	}
 
+
+
+
+	.diagonal-bg{
+		background: linear-gradient(6deg, black 0%, black 50%, transparent 50%), linear-gradient(6deg, black 0%, black 27%, transparent 27%)
+	}
+	
+	.diagonal-bg>div{
+		@apply py-96;
+	}
+
+
+
+	.number-circle{
+		@apply bg-black;
+		@apply rounded-full;
+		@apply w-16;
+		@apply aspect-square;
+		@apply flex;
+		@apply justify-center;
+		@apply items-center;
+		@apply text-2xl;
+		@apply font-black;
+		@apply z-20;
+	}
+
+	.number-circle.left::before{
+		content: "";
+		@apply absolute;
+		@apply w-full;
+		@apply h-1.5;
+		@apply bg-black;
+		@apply rounded-xl;
+		@apply -translate-x-1/2;
+	}
+	
 }
 

@@ -12,7 +12,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>How mush do you charge for a website?</h5>
+                    <p class="heading">How mush do you charge for a website?</p>
                     <p>Most multi-page websites start at around 2,000 €.</p>
                     <p>Most one-page websites start around 750 €.</p>
                     <p>The price can b higher or lower than above, depending on your project needs.</p>
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>From start to finish, how long does it take to build and launch the website?</h5>
+                    <p class="heading">From start to finish, how long does it take to build and launch the website?</p>
                     <p class="font-bold">I make sure I underpromise and overdelive. I set a 8 week deadline for the project.</p>
                     <p>The part of designing the website that usually takes the most time is getting all the necessary stuff from you, like content, pictures and other items.</p>
                     <p>If you're able to get back to me quickly, we might be able to finish the project faster than the estimated 8 weeks.</p>
@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>How do we communicate throughout the website build?</h5>
+                    <p class="heading">How do we communicate throughout the website build?</p>
                     <p class="font-bold">I like to provide status updates on a weekly cadence.</p>
                     <p>As I work on the website, I might need to ask yo some questions or get some more information to make sure I'm accurately you business and what you offer.</p>
                     <p>I'll probably send you an email or text to get this info, or to clarify anything I'm not sure about.</p>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>What will you need from me?</h5>
+                    <p class="heading">What will you need from me?</p>
                     <ul class="list-disc ml-5 mt-5">
                         <li>Photos</li>
                         <li>Videos</li>
@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>What if I don't like the website?</h5>
+                    <p class="heading">What if I don't like the website?</p>
                     <p>I've never had anyone not like the webite I've made for them.</p>
                     <p>That doesn't happen because of the way I build websites.</p>
                     <p>The first major step of the process is for you to choose your design.</p>
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>How do I pay for the website?</h5>
+                    <p class="heading">How do I pay for the website?</p>
                     <p>Ideally, you'd pay 100% of the price upfront.</p>
                     <p>This way we can just get everything doneand out of the way, and then, once you give me the go-ahead, I can launch the website without needing anymore money from you.</p>
                     <p>I do off the option to pay 50% down and 50% after it's complete.</p>
@@ -66,7 +66,7 @@
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>Who hosts the website?</h5>
+                    <p class="heading">Who hosts the website?</p>
                     <p>The website is hosted on Siteground Premium Hosting Technologies.</p>
                     <p>From Siteground's website:</p>
                     <p>"Our platform is built for performance on top of Google Cloud infrastructure with multiple custom speed optimizations."</p>
@@ -76,7 +76,7 @@
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>What if I don't want to manage the website at all. Can you do it all for me?</h5>
+                    <p class="heading">What if I don't want to manage the website at all. Can you do it all for me?</p>
                     <p>We can set you up with a website maintenance package. The minimum monthly retainer is 200 €.</p>
                     <p>We'' set up a monthly retainer which essentially put me on your "payroll" so to speak and you can text/email/call me with any updates you want to make.</p>
                     <p>I can usually get most updates completed and live within 48 hours during business days.</p>
@@ -84,13 +84,13 @@
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>Can I update the website myself once it's been built.</h5>
+                    <p class="heading">Can I update the website myself once it's been built.</p>
                     <p>Yes! Any text and images you see on the site, you can update without needing me.</p>
                     <p>After the site is launched, I will show you how to update the site if you'd like. It's pretty easy.</p>
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>Will you write the content for me?</h5>
+                    <p class="heading">Will you write the content for me?</p>
                     <p>Yes, I can write the content for you.</p>
                     <p>I have personal relationships with content writers who produce excellent writing and are affordable.</p>
                     <p>Content writing falls outside the scope of the website design invoice.</p>
@@ -98,12 +98,12 @@
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>Will my website be mobile friendly</h5>
+                    <p class="heading">Will my website be mobile friendly</p>
                     <p>Yes! The website will look great and professional on all devices.</p>
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>Do you off SEO services?</h5>
+                    <p class="heading">Do you off SEO services?</p>
                     <p>I do SEO for a big software company as my day job, so I can definitely help you with your SEO needs.</p>
                     <p>If you're interested in SEO, we can discuss it further.</p>
                     <p>SEO services fall outside the scope of the website design invoice.</p>
@@ -111,13 +111,13 @@
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>How much does SEO cost?</h5>
+                    <p class="heading">How much does SEO cost?</p>
                     <p>It is usually a monthly retainer depending on the scope of the project.</p>
                     <p>There is no easy answer but to give a general range, the minimum SEO budget to produce results should be at least 1,000 € per month.</p>
                 </div>
 
                 <div class="border border-gray-300 rounded px-8 pt-4 pb-8">
-                    <h5>Will you buy the domain for you?</h5>
+                    <p class="heading">Will you buy the domain for you?</p>
                     <p>Yes! I can buy the domain for you.</p>
                 </div>
 
