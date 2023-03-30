@@ -95,7 +95,7 @@
 
     <div class="!w-screen !mx-0">
         <div class="w-full lg:w-3/4 mx-auto">
-            <div class="text-center text-[5rem] tracking-widest font-black bg-yellow-300 mx-20 uppercase mt-4 rounded animate-bounce">
+            <div class="text-center text-[5rem] tracking-widest font-black bg-yellow-300 border border-black drop-shadow-xl mx-20 uppercase mt-4 rounded animate-bounce">
                 Happy customer!
             </div>
         </div>

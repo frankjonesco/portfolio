@@ -56,7 +56,23 @@
             </p>
         @endunless
 
-        <p class="py-12 text-2xl text-center leading-10 text-gray-500 font-light">Or email me directly <a href="mailto:hello@frankjones.co" class="text-black font-bold bg-yellow-300 px-1.5 py-1 hover:bg-black hover:text-white transition-all ease duration-300">hello@frankjones.co</a></p>
-        
+        <div class="grid grid-cols-2 mt-12 mb-32">
+            <div class="text-center pb-10 bg-black text-white">
+                <span class="py-6 text-lg leading-10 font-light block">
+                    Or email me directly
+                </span>
+                <a href="mailto:hello@frankjones.co" class="mx-auto inline-block text-2xl text-black font-bold bg-yellow-300 px-2.5 py-1 hover:bg-black hover:text-white transition-all ease duration-300">
+                    <i class="fa-regular fa-envelope mr-1"></i> hello@frankjones.co
+                </a>
+            </div>
+            <div class="text-center border border-black border-l-0">
+                <span class="py-6 text-lg leading-10 text-black font-light block">
+                    Or send me a message on
+                </span>
+                <a href="https://wa.me/447565840007" target="_blank" class="mx-auto inline-block text-2xl text-black font-bold bg-yellow-300 px-2.5 py-1 hover:bg-black hover:text-white transition-all ease duration-300 border border-black rounded-sm">
+                    <i class="fa-brands fa-whatsapp mr-1"></i> Whatsapp
+                </a>
+            </div>
+        </div>
     </div>
 </section>
